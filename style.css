@@ -47,6 +47,154 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /** Your CSS Below **/
+body{
+  max-width: var(--width-desktop);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: var(--fs-base);
+  font-size: var(--font-paragraph);
+  margin-top: 126px;
+  margin-bottom: 126px; 
+  background-color: var(--clr-stone100);
+  /* border: 3rem solid white; */
+  /* border-radius: 2%; */
+}
+
+.recipe-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* gap leave for later */
+  /* gap: 2rem; */
+  padding: 2.4rem;
+  width: 740px;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.recipe-container header img{
+  border-radius: 1rem;
+}
+
+p , div{
+  color: var(--clr-stone600);  
+  font-weight: var(--fw-regular);
+}
+
+.recipe-container header h1{
+  font-family: var(--fs-accent);
+  font-size: var(--font-header);
+  color: var(--clr-stone900);
+  font-weight: var(--fw-black);
+  padding-top: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.preparation-time{
+  margin: 2rem 0 1.7rem 0;
+  padding: 1.7rem;
+  background-color: var(--clr-rose50);
+  border-radius: 1rem;
+
+}
+
+.preparation-time h4{
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-rose800);
+}
+
+.preparation-time ul li{
+  padding-top: 0.7rem;
+}
+
+/* come back to this purple (.)(.) ;/;/;/;/
+.preparation-time ul{
+  color: var(--clr-rose800);
+} */
+
+.preparation-time ::marker{
+  color: var(--clr-rose800);
+}
+
+.ingredients{ 
+  padding-bottom: 2rem;
+}
+
+.ingredients h2{
+  font-family: var(--fs-accent);
+  font-size: var(--font-sub-header);
+  font-weight: var(--fw-regular) ;
+  color: var(--clr-brown800);
+  padding-bottom: 0.2rem;
+}
+
+.ingredients ::marker{
+  color: var(--clr-brown800);
+}
+
+.ingredients ul li{
+  padding-top: 0.8rem;
+}
+
+hr{
+  border: 0.1px solid var(--clr-stone150);
+  opacity: 55%;
+}
+
+.instructions{
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+}
+
+.instructions h2{
+  font-family: var(--fs-accent);
+  font-size: var(--font-sub-header);
+  font-weight: var(--fw-regular) ;
+  color: var(--clr-brown800);
+  padding-bottom: 0.2rem;
+}
+
+.instructions ::marker{
+  color: var(--clr-brown800);
+}
+
+.instructions ol li{
+  padding-top: 0.8rem;
+}
+
+.nutrition{
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+}
+
+.nutrition h2{
+  font-family: var(--fs-accent);
+  font-size: var(--font-sub-header);
+  font-weight: var(--fw-regular) ;
+  color: var(--clr-brown800);
+  padding-bottom: 1rem;
+}
+
+.nutrition h2 , span{
+  color: var(--clr-brown800);
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
+  /* margin-top: 1rem; */
+  /* padding-right: 33%; */
+  padding: 1rem 33% 0.4rem 2.2rem;
+}
+
+.nutrition-item span {
+  font-weight: var(--fw-bold);
+  width: 50px;
+}
+
 
 /** Attribution CSS **/
 .attribution { font-size: 11px; text-align: center; }
